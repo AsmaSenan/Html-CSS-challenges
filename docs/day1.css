@@ -1,0 +1,196 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  /* width: 100%; */
+  background: white;
+  font-family: 'system-ui';
+  /* font-size: 16px; */
+}
+p{
+  font-size: 20px;
+}
+.container{
+  display: flex;
+  align-items: center;
+  width: 80%;
+  border-radius: 20px 0px 0px 20px;
+
+  -webkit-box-shadow: 1px 2px 11px 1px rgba(148,148,148,1);
+-moz-box-shadow: 1px 2px 11px 1px rgba(148,148,148,1);
+box-shadow: 1px 2px 11px 1px rgba(148,148,148,1);
+
+  
+}
+.container > div{
+  height: 80vh;
+  flex: 2;
+
+}
+.leftside{
+  background: #C6FFDD;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px 0px 0px 20px;
+
+}
+.avter{
+  width: 150px;
+  height: 150px;
+  margin-bottom: 60px;
+}
+.paddingleft > h2 , .paddingleft > p{
+  margin: 0px 55px;
+  margin-bottom: 40px;
+  
+}
+.chevronRight{
+  background: #2c2c2c;
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  position: absolute;
+  left: 28.5%;
+
+}
+
+.chevronRight i{
+  color: #C6FFDD;
+  font-size: 1.5rem;
+  display: block;
+  padding: 0.7rem 1.1rem;
+  animation: goRight 2s infinite;  
+}
+@keyframes goRight {
+  0%{
+    opacity: 0;
+    transform: translateX(-0.5rem);
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: translateX(0.5rem);
+  }
+}
+.rightside{
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form{
+  width: 80%; 
+}
+.row{
+padding-bottom: 70px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  padding-top: 5px;
+}
+label {
+  padding: 12px 0px;
+}
+input[type=text], input[type=date], input[type=email]{
+  width: 90%;
+  padding: 12px 0px;
+  border: none;
+  font-size: 16px;
+}
+.col-50{
+  width: 40%;
+  display: inline-block;
+}
+.col-30{
+  width: 25%;
+  display: inline-block;
+}
+
+#mars, #venus{
+  padding-right: 16px;
+  font-size: 24px;
+  color: #909090;
+  cursor: pointer;
+  transition:0.5s;
+  transition-property: color;
+}
+.card{
+  margin-right: 15px;
+  font-size: 20px;
+  color: white;
+  background-color: #909090;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 100%;
+  cursor: pointer;
+  transition:0.5s;
+  transition-property: color;
+  display: inline-block;
+}
+.card i{
+  font-size: 1.1rem;
+  padding: 0.45rem 0.45rem;
+}
+label #sidebar_btn:hover{
+  color: #19B3D3;
+}
+
+input[type=radio]{
+  display:none
+}
+.fa-calendar-week{
+  color: #909090;
+}
+.fa-calendar-week{
+  font-size: 20px;
+  /* margin-left: -30px; */
+  /* cursor: pointer; */
+}
+.row > button {
+  margin: 10px;
+  margin-top: 30px;
+  width: 150px;
+  padding: 18px 0px;
+  float: right;
+  border: none;
+  border-radius: 5px ;
+  cursor: pointer;
+}
+.saveBtn{
+  background: #f7797d;
+  color: white;
+  transition: 0.5s;
+  transition-property: background;
+
+}
+.saveBtn:hover{
+  background: white;
+  border: 1px solid #f7797d;
+  color: #f7797d;
+}
+.cancelBtn{
+  background: #fff;
+}
